@@ -1,5 +1,6 @@
 ---
 layout: default
+{{ site.title }}
 ---
 
 # 欢迎来到 {{ site.title }}！
