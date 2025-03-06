@@ -1,14 +1,35 @@
-# _config.yml
-title: "我的文档中心"
-theme: jekyll-theme-cayman  # 使用 GitHub 官方主题
-description: "欢迎访问我的文档库！"
-baseurl: ""  # 如果你的网站部署在子路径（如仓库名），需设置 baseurl 为 "/仓库名"
-plugins:
-  - jekyll-relative-links  # 自动转换相对链接（GitHub Pages 支持）
+# 基础配置
+title: "我的个人主页"
+description: "欢迎访问我的个人网站！"
+baseurl: ""  # 如果站点在子目录（如 /blog），需填写子目录名
+url: "https://yourusername.github.io"  # 替换为你的 GitHub Pages URL
 
-# 自定义导航链接
-nav_links:
-  - name: "首页"
-    url: /
-  - name: "文档列表"
-    url: /docs/
+# Jekyll 设置
+theme: minima  # 使用默认主题（可替换为其他主题）
+plugins:
+  - jekyll-feed
+
+# 自定义变量
+author:
+  name: "你的名字"
+  email: "your@email.com"
+  github: "yourusername"
+
+# 导航菜单
+defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: page
+      nav: true  # 是否显示在导航栏
+
+# 排除不需要处理的文件
+exclude:
+  - Gemfile
+  - Gemfile.lock
+
+# 添加以下配置
+sass:
+  sass_dir: assets/css
+  style: compressed
