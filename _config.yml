@@ -1,0 +1,4 @@
+title: 我的网站
+theme: jekyll-theme-minimal  # 使用 GitHub 官方主题
+plugins:
+  - jekyll-feed
