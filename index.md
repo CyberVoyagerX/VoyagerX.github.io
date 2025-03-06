@@ -1,15 +1,11 @@
 ---
 layout: home
-title: 欢迎
+title: Welcome to My Cyber Space
 ---
 
-# 欢迎来到我的主页！
+![Banner](https://via.placeholder.com/1200x400)
+## Latest Posts
 
-这里是我的个人空间，分享技术文章、项目经验和生活点滴。
-
-## 最新文章
-{% for post in site.posts limit:3 %}
-- [{{ post.title }}]({{ post.url }}) ({{ post.date | date: "%Y-%m-%d" }})
+{% for post in site.posts limit:5 %}
+- [{{ post.title }}]({{ post.url }}) - {{ post.date | date: "%b %d, %Y" }}
 {% endfor %}
-
-[查看全部文章](/blog) | [关于我](/about)
