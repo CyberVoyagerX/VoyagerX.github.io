@@ -1,4 +1,14 @@
-title: 我的网站
-theme: jekyll-theme-minimal  # 使用 GitHub 官方主题
+# _config.yml
+title: "我的文档中心"
+theme: jekyll-theme-cayman  # 使用 GitHub 官方主题
+description: "欢迎访问我的文档库！"
+baseurl: ""  # 如果你的网站部署在子路径（如仓库名），需设置 baseurl 为 "/仓库名"
 plugins:
-  - jekyll-feed
+  - jekyll-relative-links  # 自动转换相对链接（GitHub Pages 支持）
+
+# 自定义导航链接
+nav_links:
+  - name: "首页"
+    url: /
+  - name: "文档列表"
+    url: /docs/
